@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VerifAi — Automated AI Code Auditor
 
-## Getting Started
+> **Your AI agent ships code. [cite_start]You ship safety.** [cite: 2]
 
-First, run the development server:
+[cite_start]VerifAi is a pre-clone security tool designed to keep autonomous AI coding agents accountable[cite: 91]. [cite_start]It allows developers to instantly fetch, map, and scan public or private GitHub repositories and Pull Requests for security vulnerabilities before pulling the code into a local environment[cite: 87, 88].
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✦ Why It Matters
+AI writes the code, but you own the consequences. [cite_start]VerifAi provides continuous visibility into your AI's development cycles by mapping heavily modified files and pinpointing critical security vulnerabilities in a single scan[cite: 95]. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✦ Key Features
+* [cite_start]**Zero-Friction Audits:** Drop any GitHub repo or PR link to run a comprehensive static analysis in seconds[cite: 83].
+* **Deep AI Analysis:** Fetches raw code via the GitHub API and utilizes LLMs to expose hidden flaws, bad patterns, and sloppy code[cite: 92, 93].
+* [cite_start]**Hierarchical Mapping:** Visualizes the entire repository tree, highlighting risky files instantly[cite: 93].
+* [cite_start]**Actionable Metrics:** Generates an immediate codebase integrity score alongside concrete fix suggestions[cite: 33, 34].
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ✦ Tech Stack
+* **Frontend:** Next.js, React, TypeScript
+* **APIs:** GitHub REST API (Trees & Pulls), Groq (Llama-3-70b-versatile)
